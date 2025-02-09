@@ -8,6 +8,8 @@ import Signup from "./components/Signup";
 import Getin_touch from "./components/Getin_touch";
 import Topnav from "./components/Topnav";
 import Products1 from "./components/Products1";
+import Proapi from "./components/proapi";
+
 
 export default function Home() {
   return (
@@ -23,7 +25,7 @@ export default function Home() {
 
   <Popular_products />
 
-
+    <Proapi/>
   {/* <Signup />
 
   <Getin_touch /> */}

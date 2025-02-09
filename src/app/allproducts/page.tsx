@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Topnav from "../components/Topnav";
+import Proapi from "../components/proapi";
 
 function allproducts() {
   const products = [
@@ -149,6 +150,8 @@ function allproducts() {
 
       {/* product grid row 1 */}
 
+
+
       <div className="container w-[1440px]  mx-auto ">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
           {products.map((product, index) => (
@@ -224,6 +227,7 @@ function allproducts() {
         </div>
       </div>
 
+<Proapi/>
       {/* button div  */}
       <div className=" flex  justify-center">
         {" "}

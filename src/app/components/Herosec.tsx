@@ -9,7 +9,7 @@ const Herosec = () => {
 
 
     <div className=" flex flex-row top-0 min-w-[390px] h-[502px] sm:w-full sm:max-w-[1440px] sm:h-[704px] bg-white mx-auto ">
-      <div className="flex flex-col  bg-[#2A254B] w-[390px] h-[502px] sm:w-[760px]  sm:h-[584px] sm:mt-[60px] sm:ml-[80px] ">
+      <div className="flex flex-col  bg-[#2A254B] w-[390px] h-[502px] sm:w-[760px]  sm:h-[584px] sm:mt-[10px] sm:ml-[80px] ">
 
         <div className=" flex flex-col w-[342PX] h-[135PX] mt-[40px] ml-[24px] sm:w-[513px] sm:h-[187px] sm:mt-[60px] sm:ml-[60px] gap-41 ">
           <h2 className=" text-white font-[400] text-[32px] leading-[44.8px] font-clash-display ">
@@ -44,7 +44,7 @@ const Herosec = () => {
         <img
           src="/chair1.png"
           alt="chair"
-          className="w-[520px] h-[584px] mt-[60px] mr-[80px]"
+          className="w-[520px] h-[584px] mt-[10px] mr-[80px]"
         ></img>
       </div>
     </div>

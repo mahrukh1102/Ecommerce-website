@@ -5,6 +5,8 @@ const page = () => {
   return (
     <div>
       <Topnav />
+      
+      
       <div className="flex flex-wrap relative w-full max-w-[1440px] h-[749px] mt-0 mx-auto ">
         {/* text div */}
         <span className="flex absolute  ">
@@ -34,6 +36,7 @@ const page = () => {
         </div>
 
       </div>
+      
     </div>
   );
 };
