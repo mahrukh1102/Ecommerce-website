@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { RiLinkedinLine } from "react-icons/ri";
 import { RiFacebookLine } from "react-icons/ri";
 import { FaInstagram } from "react-icons/fa6";
@@ -7,92 +7,120 @@ import { AiFillSkype } from "react-icons/ai";
 import { FaPinterest } from "react-icons/fa6";
 import Link from 'next/link';
 
-
 const Footer = () => {
   return (
-  <>
-   <div className=" flex flex-wrap justify-between items-center w-full max-w-[1440px] h-[380px] mx-auto  bg-[#2A254B]" >
-
-      
-      <div className=' w-[108px] h-[175px] ml-[82px] mt-[58px] '>
-        <ul className=' flex flex-col justify-between gap-[12px]'>
-          <li className='text-[16px] w-[43px] h-[20px] font-normal linear-[20px]  font-clash-display text-[#FFFFFF]'>
-          Menu
-          </li>
-          <li className='text-[14px] font-normal linear-[19px]    font-Satoshi Medium text-[#FFFFFF]'>New arrivals</li>
-          <li className='text-[14px] font-normal linear-[19px]   font-Satoshi Medium text-[#FFFFFF]'>Recently viewed</li>
-          <li className='text-[14px] font-normal linear-[19px]   font-Satoshi Medium text-[#FFFFFF]'>Popular this week</li>
-          <li className='text-[14px] font-normal linear-[19px]   font-Satoshi Medium text-[#FFFFFF]'><Link href="./allproducts">All products</Link></li>
-        </ul>
-      </div>
-      <div className='w-[105px] h-[175px] mt-[58px] gap-12'>
-        <ul className=' flex flex-col justify-between gap-[12px]' >
-          <li className='text-[16px] font-normal linear-[20px] font-clash-display 
-          text-[#FFFFFF]'>Categories</li>
-          <li className='text-[14px] font-normal linear-[19px] font-Satoshi Medium text-[#FFFFFF]'>Crockery</li>
-          <li className='text-[14px] font-normal linear-[19px] font-Satoshi Medium text-[#FFFFFF]'>Furniture</li>
-          <li className='text-[14px] font-normal linear-[19px] font-Satoshi Medium text-[#FFFFFF]'>Homeware</li>
-          <li className='text-[14px] font-normal linear-[19px] font-Satoshi Medium text-[#FFFFFF]'>Plant pots</li>
-          <li className='text-[14px] font-normal linear-[19px] font-Satoshi Medium text-[#FFFFFF]'>Chairs</li>
-          <li className='text-[14px] font-normal linear-[19px] font-Satoshi Medium text-[#FFFFFF]'>Crockery</li>
-        </ul>
-      </div>
-      <div className='w-[105px] h-[175px] mt-[58px] gap-12'>
-        <ul className=' flex flex-col justify-between gap-[12px]'>
-          <li className='text-[16px] font-normal linear-[20px] font-clash-display
-           text-[#FFFFFF]'>Our company</li>
-           
-          <li className='text-[14px] font-normal linear-[19px] font-Satoshi Medium text-[#FFFFFF]'><Link href="./about">About us</Link></li>
-          <li className='text-[14px] font-normal linear-[19px] font-Satoshi Medium text-[#FFFFFF]'>Vacancies</li>
-          <li className='text-[14px] font-normal linear-[19px] font-Satoshi Medium text-[#FFFFFF]'><Link href="./listing"> Contact us</Link></li>
-          <li className='text-[14px] font-normal linear-[19px] font-Satoshi Medium text-[#FFFFFF]'>Privacy</li>
-          <li className='text-[14px] font-normal linear-[19px] font-Satoshi Medium text-[#FFFFFF]'>Returns policy</li>
-
-        </ul>
+    <div className="w-full max-w-[1440px] h-auto mx-auto bg-[#2A254B] sm:mt-10 px-4 sm:px-8 lg:px-20 py-10">
+      {/* Footer Content */}
+      <div className="flex flex-col lg:flex-row justify-between gap-8 lg:gap-0">
+        {/* Menu Section */}
+        <div className="w-full lg:w-auto">
+          <ul className="flex flex-col gap-3">
+            <li className="text-[16px] font-normal leading-[20px] font-clash-display text-[#FFFFFF]">
+              Menu
+            </li>
+            <li className="text-[14px] font-normal leading-[19px] font-Satoshi Medium text-[#FFFFFF]">
+              New arrivals
+            </li>
+            <li className="text-[14px] font-normal leading-[19px] font-Satoshi Medium text-[#FFFFFF]">
+              Recently viewed
+            </li>
+            <li className="text-[14px] font-normal leading-[19px] font-Satoshi Medium text-[#FFFFFF]">
+              Popular this week
+            </li>
+            <li className="text-[14px] font-normal leading-[19px] font-Satoshi Medium text-[#FFFFFF]">
+              <Link href="./allproducts">All products</Link>
+            </li>
+          </ul>
         </div>
-      <div className=' w-[627px] h-[175px] mt-[58px] mr-[82px] '>
-        
-          <h1 className='text-[16px]  font-normal linear-[20px] font-clash-display 
-          text-[#FFFFFF]'>Join our mailing list</h1>
-         
-          <div className='mt-4 '>
-          <input type="email" className="form-input w-[509px] h-[56px] bg-opacity-10
-           text-[16px] font-normal linear-[21px] bg-[#F9F9F9]" placeholder='Your@email.com ' 
-          ></input>
-           <button
-            className="w-[118px] h-[56px] text-[16px] bg-[#FFFFFF]
-            font-normal linear-[24px] text-[#2A254B] "  >
-            Sign up
-          </button>
+
+        {/* Categories Section */}
+        <div className="w-full lg:w-auto">
+          <ul className="flex flex-col gap-3">
+            <li className="text-[16px] font-normal leading-[20px] font-clash-display text-[#FFFFFF]">
+              Categories
+            </li>
+            <li className="text-[14px] font-normal leading-[19px] font-Satoshi Medium text-[#FFFFFF]">
+              Crockery
+            </li>
+            <li className="text-[14px] font-normal leading-[19px] font-Satoshi Medium text-[#FFFFFF]">
+              Furniture
+            </li>
+            <li className="text-[14px] font-normal leading-[19px] font-Satoshi Medium text-[#FFFFFF]">
+              Homeware
+            </li>
+            <li className="text-[14px] font-normal leading-[19px] font-Satoshi Medium text-[#FFFFFF]">
+              Plant pots
+            </li>
+            <li className="text-[14px] font-normal leading-[19px] font-Satoshi Medium text-[#FFFFFF]">
+              Chairs
+            </li>
+            <li className="text-[14px] font-normal leading-[19px] font-Satoshi Medium text-[#FFFFFF]">
+              Crockery
+            </li>
+          </ul>
+        </div>
+
+        {/* Our Company Section */}
+        <div className="w-full lg:w-auto">
+          <ul className="flex flex-col gap-3">
+            <li className="text-[16px] font-normal leading-[20px] font-clash-display text-[#FFFFFF]">
+              Our company
+            </li>
+            <li className="text-[14px] font-normal leading-[19px] font-Satoshi Medium text-[#FFFFFF]">
+              <Link href="./about">About us</Link>
+            </li>
+            <li className="text-[14px] font-normal leading-[19px] font-Satoshi Medium text-[#FFFFFF]">
+              Vacancies
+            </li>
+            <li className="text-[14px] font-normal leading-[19px] font-Satoshi Medium text-[#FFFFFF]">
+              <Link href="./listing">Contact us</Link>
+            </li>
+            <li className="text-[14px] font-normal leading-[19px] font-Satoshi Medium text-[#FFFFFF]">
+              Privacy
+            </li>
+            <li className="text-[14px] font-normal leading-[19px] font-Satoshi Medium text-[#FFFFFF]">
+              Returns policy
+            </li>
+          </ul>
+        </div>
+
+        {/* Mailing List Section */}
+        <div className="w-full lg:w-[627px]">
+          <h1 className="text-[16px] font-normal leading-[20px] font-clash-display text-[#FFFFFF]">
+            Join our mailing list
+          </h1>
+          <div className="mt-4 flex flex-col sm:flex-row gap-4">
+            <input
+              type="email"
+              className="w-full sm:w-[509px] h-[56px] bg-opacity-10 text-[16px] font-normal leading-[21px] bg-[#F9F9F9] px-4"
+              placeholder="Your@email.com"
+            />
+            <button className="w-full sm:w-[118px] h-[56px] bg-[#FFFFFF] text-[16px] font-normal leading-[24px] text-[#2A254B] hover:bg-[#2A254B] hover:text-[#FFFFFF] transition-all duration-300">
+              Sign up
+            </button>
           </div>
-
         </div>
-       <div className='w-[1277px] h-[0] border border-[#4E4D93] border-1px mx-[80px] items-center mt-[80px]  '></div>
-                       
-      {/* copywrite div */}
-       <div className=' w-full mx-[80px]  flex justify-between items-center mb-[10px] '>
-              <h1 className='text-[14px]  font-normal linear-[19px] font-Satoshi Medium text-[#FFFFFF]'>Copyright 2022 Avion LTD</h1>
-              <div className='flex gap-[24px]'>
-              <RiLinkedinLine className='bg-white w-[24px] h-[24px] '/>
-              <RiFacebookLine className='bg-white w-[24px] h-[24px]' />
-              <FaInstagram className='text-white w-[24px] h-[24px]'/>
-              <AiFillSkype className='text-white w-[24px] h-[24px]'/>
-              <TbBrandTwitterFilled className='text-white w-[24px] h-[24px]'/>
-              <FaPinterest className='text-white w-[24px] h-[24px]'/>
-            </div>
-            
-           
-        
-              </div>
+      </div>
+
+      {/* Divider */}
+      <div className="w-full h-[1px] bg-[#4E4D93] my-8"></div>
+
+      {/* Copyright and Social Icons */}
+      <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
+        <h1 className="text-[14px] font-normal leading-[19px] font-Satoshi Medium text-[#FFFFFF]">
+          Copyright 2022 Avion LTD
+        </h1>
+        <div className="flex gap-6">
+          <RiLinkedinLine className="text-white w-[24px] h-[24px]" />
+          <RiFacebookLine className="text-white w-[24px] h-[24px]" />
+          <FaInstagram className="text-white w-[24px] h-[24px]" />
+          <AiFillSkype className="text-white w-[24px] h-[24px]" />
+          <TbBrandTwitterFilled className="text-white w-[24px] h-[24px]" />
+          <FaPinterest className="text-white w-[24px] h-[24px]" />
+        </div>
+      </div>
     </div>
+  );
+};
 
-    
-
-    </>   
-       
-       
-    
-  )
-}
-
-export default Footer
+export default Footer;
