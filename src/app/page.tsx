@@ -26,9 +26,9 @@ export default function Home() {
   <Popular_products />
 
     <Proapi/>
-  {/* <Signup />
+   <Signup />
 
-  <Getin_touch /> */}
+  <Getin_touch /> 
 
 
 </div>
